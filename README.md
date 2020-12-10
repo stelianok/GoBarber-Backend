@@ -36,8 +36,8 @@
 ### Descrição
 O goBarber foi um projeto fullstack, com um backend, frontend e aplicativo mobile desenvolvido durante o bootcamp da rocketseat. O Gobarber busca diminuir  a distância entre barbearias, salões de beleza e seus clientes, através de uma plataforma de agendamento com uma interface intuitiva, moderna, e fácil de usar.
 
-Aplicativo Mobile:  https://github.com/stelianok/GoBarber-Mobile
-Aplicação Web: https://github.com/stelianok/GoBarber-Web
+- Aplicativo Mobile:  https://github.com/stelianok/GoBarber-Mobile
+- Aplicação Web: https://github.com/stelianok/GoBarber-Web
 
 ### Objetivo
 O principal motivo da criação desse projeto foi o aprendizado. Eu aprendi muito sobre NodeJS e e seu ecossistema, como criar Restful APIs seguindo os princípios SOLID e boas práticas de organização de código, para a criação de uma base de código escalável e de fácil manutenção. Eu também aprendi muito sobre o carregamento de arquivos utilizando NodeJS, e criação de queries SQL utilizando  typeorm.
