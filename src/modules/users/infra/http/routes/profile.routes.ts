@@ -4,10 +4,11 @@ import ProfileController from '../controllers/ProfileController';
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
 const profileRouter = Router();
-const usersController = new ProfileController();
+const profileController = new ProfileController();
 
 profileRouter.use(ensureAuthenticated);
 
-profileRouter.put('/', usersController.update);
+profileRouter.get('/', profileController.show)
+profileRouter.put('/', profileController.update);
 
 export default profileRouter;
