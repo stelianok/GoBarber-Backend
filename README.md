@@ -4,14 +4,7 @@
 
 </p>
 
-<!-- Examples of your project working -->
-
-<!-- ![Search](https://i.imgur.com/P3JUhvT.gif)  ![DetailedScreen](https://i.imgur.com/H4rjQKY.gif) -->
-
-<!--  ![RandomButton](https://i.imgur.com/igCrZo1.gif) ![Feed](https://i.imgur.com/dd87IrI.gif)  -->
- 
-
-## Tecnologias :rocket: 
+## Tecnologias :rocket:
 ### Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - NodeJS
@@ -63,7 +56,7 @@ LinkedIn:
 [Kauã Alexandro Steliano](https://www.linkedin.com/in/kauã-steliano-107620181/)
 E-mail:
 stelianok@gmail.com
-Github: 
+Github:
 [Stelianok](https://github.com/stelianok)
 
 
