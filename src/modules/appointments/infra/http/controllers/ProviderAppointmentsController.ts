@@ -1,6 +1,5 @@
-import CreateAppointmentService from '@modules/appointments/services/CreateAppointmentService';
 import ListProviderAppointmentsService from '@modules/appointments/services/ListProviderAppointmentsService';
-import { parseISO } from 'date-fns';
+import { classToClass } from 'class-transformer';
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
@@ -17,7 +16,7 @@ export default class ProviderAppointmentsController {
             month: Number(month),
             year: Number(year)
         });
-        return response.json(appointments);
+        return response.json(classToClass(appointments));
 
 
     }
