@@ -6,7 +6,6 @@ import AppError from '@shared/errors/AppError';
 
 let fakeUsersRepository: FakeUsersRepository;
 let fakeHashProvider: FakeHashProvider;
-let createUser: CreateUserService;
 let authenticateUser: AuthenticateUserService;
 
 describe('Authenticate user', () => {
@@ -14,18 +13,13 @@ describe('Authenticate user', () => {
         fakeUsersRepository = new FakeUsersRepository();
         fakeHashProvider = new FakeHashProvider();
 
-        createUser = new CreateUserService(
-            fakeUsersRepository,
-            fakeHashProvider
-        );
-
         authenticateUser = new AuthenticateUserService(
             fakeUsersRepository,
             fakeHashProvider,
         );
     });
     it('should be able to authenticate', async () => {
-        const user = await createUser.execute({
+        const user = await fakeUsersRepository.create({
             name: 'Will Smith',
             email: 'willSmithOficial@gmail.com',
             password: '123456',
@@ -48,7 +42,7 @@ describe('Authenticate user', () => {
 
     });
     it('should not be able to authenticate with wrong email/password combination', async () => {
-        await createUser.execute({
+        await fakeUsersRepository.create({
             name: 'Will Smith',
             email: 'willSmithOficial@gmail.com',
             password: '123456',
